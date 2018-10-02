@@ -1,22 +1,13 @@
 package model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
 import java.io.Serializable;
 
-@Entity
-@Table(name = "tbl_carro")
 public class Carro implements Serializable {
-    @Id
     private int id;
-    @Column
     private String modelo;
-    @Column
-    private float valor;
+    private int valor;
 
-    public Carro(int id, String modelo, float valor) {
+    public Carro(int id, String modelo, int valor) {
         this.id = id;
         this.modelo = modelo;
         this.valor = valor;
@@ -42,7 +33,7 @@ public class Carro implements Serializable {
         return valor;
     }
 
-    public void setValor(float valor) {
+    public void setValor(int valor) {
         this.valor = valor;
     }
 
