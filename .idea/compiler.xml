@@ -9,5 +9,8 @@
         <module name="sjrest" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="sjrest" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>
